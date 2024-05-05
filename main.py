@@ -24,12 +24,6 @@ def get_settings():
     return config.Settings()
 
 
-class Item(BaseModel):
-    name: str
-    description: str = None
-    price: float
-    tax: float = None
-
 @app.get("/")
 def root():
     return {"message": "Hello World"}
